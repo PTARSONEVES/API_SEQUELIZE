@@ -6,7 +6,7 @@
 module.exports = {
   async up (queryInterface/*, Sequelize*/) {
     await queryInterface.bulkInsert(
-      "tpomidias", [
+      "midiatpos", [
         {
           namemidia: 'Facebook',
         },
@@ -47,6 +47,6 @@ module.exports = {
   },
 
   async down (queryInterface/*, Sequelize*/) {
-    await queryInterface.bulkDelete('tpomidias', null, {});
+    await queryInterface.bulkDelete('midiatpos', null, {});
   }
 };

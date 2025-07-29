@@ -25,7 +25,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: true,
         references: {
-          model: 'tpomidias',
+          model: 'midiatpos',
           key: 'id',
         },
         onDelete: "SET NULL",

@@ -1,6 +1,6 @@
 import Sequelize, { Model } from 'sequelize';
 
-export default class Tpomidia extends Model {
+export default class Midiatpo extends Model {
   static init(sequelize) {
     super.init({
       namemidia: {
@@ -15,6 +15,8 @@ export default class Tpomidia extends Model {
       },
     }, {
       sequelize,
+      underscored: false,
+      tableName: 'midiatpos',
     });
   }
 

@@ -45,13 +45,14 @@ export default class Pessoa extends Model {
     {
       sequelize,
       underscored: false,
+      tableName: 'pessoas',
     });
 
     return this;
   }
 
     static associate(models) {
-    this.belongsTo(models.Tpopessoa, {
+    this.belongsTo(models.Pessoatpo, {
       foreignKey: 'tpopessoaid'
     });
     this.hasMany(models.Email), {

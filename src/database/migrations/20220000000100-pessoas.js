@@ -19,7 +19,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: true,
         references: {
-          model: 'tpopessoas',
+          model: 'pessoatpos',
           key: 'id',
         },
         onDelete: "SET NULL",

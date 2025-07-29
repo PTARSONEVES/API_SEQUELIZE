@@ -26,6 +26,7 @@ export default class Email extends Model {
     }, {
       sequelize,
       underscored: false,
+      tableName: 'emails',
     });
 
     return this;

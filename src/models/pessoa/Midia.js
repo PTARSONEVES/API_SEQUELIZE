@@ -13,10 +13,11 @@ export default class Midia extends Model {
           type: Sequelize.INTEGER,
           defaultValue: null,
         },
-     },
+      },
       {
         sequelize,
         underscored: false,
+        tableName: 'midias',
       },
     );
 
@@ -26,7 +27,7 @@ export default class Midia extends Model {
     this.belongsTo(models.Pessoa, {
       foreignKey: 'pessoaid',
     });
-    this.belongsTo(models.Tpomidia, {
+    this.belongsTo(models.Midiatpo, {
       foreignKey: 'tpomidiaid',
     });
   }

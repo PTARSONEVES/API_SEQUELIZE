@@ -3,20 +3,20 @@ import databaseConfig from '..//config/database';
 
 //Models
 // referências
-import Tpomidia from '../models/referencias/Tpomidia';
+import Midiatpo from '../models/referencias/Midiatpo';
 //pessoa
-import Tpopessoa from '../models/pessoa/Tpopessoa';
+import Pessoatpo from '../models/pessoa/Pessoatpo';
 import Pessoa from '../models/pessoa/Pessoa';
 import Email from '../models/pessoa/Email'
 import Midia from '../models/pessoa/Midia';
 
 
 const models = [
-  Tpopessoa,
+  Pessoatpo,
   Pessoa,
   Email,
   Midia,
-  Tpomidia,
+  Midiatpo,
 ];
 
 const connection = new Sequelize(databaseConfig);
